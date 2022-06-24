@@ -8,6 +8,9 @@ Este es un repositorio para proyectos de complejidad producidos como parte de un
 2. [Complejidad desde la Discapacidad](http://jacinto-davila.blogspot.com/2022/06/b2022-01-complejidad-desde-la.html)
 3. [Primer Contacto con la Complejidad](http://jacinto-davila.blogspot.com/2022/06/b2022-02-primer-contacto-con-la.html)
 4. [¿Qué es un modelo?](http://jacinto-davila.blogspot.com/2022/06/b2022-03-complejidad-que-es-un-modelo.html)
+5. [¿Cómo gestionar este curso de complejidad (audio de la clase 5)?](https://github.com/jacintodavila/complejidad/blob/main/audios/20220622_150833.m4a)
+6. ["Complejidad Hoy" (Conferencia de Edgar Morin)](https://www.youtube.com/watch?v=fSDi8YFX3Cw&t=4141s)
+7. [El Enfoque de la Biocomplejidad](https://github.com/jacintodavila/complejidad/blob/main/documentos/507.pdf)
 
 ## Una Modeloteca para Proyectos de Complejidad
 
