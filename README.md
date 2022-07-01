@@ -10,7 +10,7 @@ Este es un repositorio para proyectos de complejidad producidos como parte de un
 4. [¿Qué es un modelo?](http://jacinto-davila.blogspot.com/2022/06/b2022-03-complejidad-que-es-un-modelo.html)
 5. [¿Cómo gestionar este curso de complejidad (audio de la clase 5)?](https://github.com/jacintodavila/complejidad/blob/main/audios/20220622_150833.m4a)
 6. ["Complejidad Hoy" (Edgar Morin)](https://www.youtube.com/watch?v=fSDi8YFX3Cw&t=4141s)
-7. [El Enfoque de la Biocomplejidad](https://github.com/jacintodavila/complejidad/blob/main/documentos/507.pdf) [audio 1 de la clase 6](https://github.com/jacintodavila/complejidad/blob/main/audios/20220629_151348.m4a) [audio 2 de la clase 6](https://github.com/jacintodavila/complejidad/blob/main/audios/20220629_161614.m4a) [audio 3 de la clase 6](https://github.com/jacintodavila/complejidad/blob/main/audios/20220629_163347.m4a)
+7. [El Enfoque de la Biocomplejidad](https://github.com/jacintodavila/complejidad/blob/main/documentos/507.pdf) ( [audio 1 de la clase 6](https://github.com/jacintodavila/complejidad/blob/main/audios/20220629_151348.m4a) ) ( [audio 2 de la clase 6](https://github.com/jacintodavila/complejidad/blob/main/audios/20220629_161614.m4a) ) ( [audio 3 de la clase 6](https://github.com/jacintodavila/complejidad/blob/main/audios/20220629_163347.m4a) )
 8. ["Emergencia y Complejidad" (Robert Sapolsky, en Inglés con subtítulos)](https://youtu.be/o_ZuWbX-CyE)
 9. [Complejidad Computacional "P vs. NP"](https://www.youtube.com/watch?v=EHp4FPyajKQ)
 10. [¿Qué es eso del problema P versus NP?](https://www.youtube.com/watch?v=UR2oDYZ-Sao)
