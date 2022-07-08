@@ -16,7 +16,7 @@ Este es un repositorio para proyectos de complejidad producidos como parte de un
 10. [¿Qué es eso del problema P versus NP?](https://www.youtube.com/watch?v=UR2oDYZ-Sao)
 11. [Sobre La Lógica de la Investigación Científica](https://jacinto-davila.blogspot.com/2022/06/sobre-la-logica-de-la-investigacion.html)
 12. [Emergencia y Sistemas Multiagentes](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=292408)
-13. [Teoría de Simulación de Sistemas Multi-Agentes](https://github.com/jacintodavila/complejidad/blob/main/documentos/dut_scsc2007.pdf) [video](https://www.youtube.com/watch?v=ibkmEa6htsw&t=62s)
+13. [Teoría de Simulación de Sistemas Multi-Agentes](https://github.com/jacintodavila/complejidad/blob/main/documentos/dut_scsc2007.pdf) ([video](https://www.youtube.com/watch?v=ibkmEa6htsw&t=62s))
 14. [Hacia una Teoría de Servicios](https://github.com/jacintodavila/complejidad/blob/main/documentos/CONTRACORRIENTE-hacia-una-teoria-de-servicios-pags-28-43.pdf)
 
 
