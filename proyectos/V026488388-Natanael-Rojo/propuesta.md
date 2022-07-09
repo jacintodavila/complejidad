@@ -17,3 +17,9 @@ En base a estas interrogantes es claro que una persona con discapacidad visual n
 * ¿Cuáles herramientas serían útiles para el propósito de completar las actividades?
 * ¿Cuáles herramientas serían útiles para el propósito de completar las actividades?
 * ¿habría situaciones que actualmente no podrían ser superadas por una persona con este tipo de discapacidad?
+
+--
+
+## Comentarios
+
+Calificación propuesta: 5/5. 
