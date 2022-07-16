@@ -8,6 +8,7 @@ El ser humano puede ejecutar diferentes actividades gracias a sus capacidades ta
 * ¿Cómo discernir cuál es el autobús que se debe tomar cuya ruta pase por el lugar a donde irás y no tomar uno equivocado?
 * estando ya en el recorrido del transporte, ¿cómo determinar en que lugar debes bajar para no pasarte del destino?
 * ¿cómo lograr cruzar la calle de forma segura?
+
 Estos cuestionamientos son sólo en un caso de la vida de una persona, desde luego, estas interrogantes se pueden extender a muchos más ámbitos, por ejemplo, moverse en entornos desconocidos, reconocer objetos cotidianos como imágenes, billetes, alimentos, productos de primera necesidad, entre otras situaciones más del día a día.
 En base a estas interrogantes es claro que una persona con discapacidad visual no podría realizar estás actividades de la misma manera que lo haría una persona con su sentido de la vista completo. Así, emerge la complejidad (restringida a la adaptación del ser humano con necesidades específicas) de buscar alternativas ingeniosas para llevar a cabo dichas actividades de otras maneras. En este sentido, me gustaría realizar el estudio de cómo una persona con discapacidad visual podría desenvolverse en éstos ámbitos mencionados anteriormente e intentar responder algunas de las siguientes preguntas:
 * ¿ Es posible que una persona frente a estas situaciones pueda adaptarse para afrontarlas y superarlas?
