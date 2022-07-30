@@ -72,3 +72,9 @@ impidan su manipulación. Entonces, uno de los problemas que enfrenta el mercado
 criptomonedas es saber cuándo bajará o subirá el precio en un momento específico, para 
 eso hay varios factores, que podrían influir en las fluctuaciones inesperadas de la 
 criptomoneda en el mercado.
+
+Referencias.
+
+https://www.rankia.com/blog/blockchain-criptomonedas-bitcoin-ethereum/4040575-que-exchange-criptomonedas-analisis-mejores-exchanges
+
+https://academy.binance.com/es/articles/a-complete-guide-to-cryptocurrency-trading-for-beginners
