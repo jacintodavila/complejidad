@@ -19,10 +19,7 @@ En base a estas interrogantes es claro que una persona con discapacidad visual n
 
 ## Especificación.
 
-## Especificación.
-
 Ya presentada la vista general de la situación compleja, la cual implica varias situaciones, lo que sigue es enfocarse en una de ellas. La situación que me gustaría tratar es el reto que representa para una persona con discapacidad visual el completar una jornada de trabajo. Las jornadas de trabajo clásicas eran, por lo general, salir de tu hogar, tomar el transporte público (o ir en tu vehiculo particular), y dirigirte a tu lugar de trabajo. Desde la perspectiva de una persona con discapacidad visual, ya sea parcial o completa, este tipo de jornadas inplican varias dificultades, por ejemplo:
-
 * Ubicación del entorno: Debido a la falta del sentido de la vista, habría que resolver de una forma diferente a la que lo hace una persona sin esta discapacidad, la situación de tomar el transporte público, por ejemplo. Suponiendo que ya se encuentre en el transporte público, ahora debe resolver la situación de abandonar el transporte en el lugar adecuado para no pasar del destino. Estas, y otras situaciones como información pública, cambios de ubicaciones de algunas cosas en la ciudad, etc, son cosas que se presentan en el día a día y que hay que resolver.
 * Seguridad personal: Esto se presenta en las situaciones comunes en el trayecto hacia el lugar de trabajo en las que hay que cruzar una calle, o avenida. Esto para una persona sin algún tipo de discapacidad visual no sería problema, ya que solo tendría que observar a ambos lados de la calle, o semáforos, para determinar cuando debe cruzar. Sin embargo, para una persona con discapacidad visual, debe contar con ayuda de otra persona, o con otros medios ya sea tecnológicos, o no, para poder saber cuando debe cruzar sin peligros. Otra cosa a considerar es que en ciertos lugares del camino pueden encontrarse obstáculos inesperados, y si no se detectan a tiempo, la persona podría hacerse daño.
 
