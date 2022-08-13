@@ -27,6 +27,12 @@ Como cumplir con los pedidos sin tantos errores?
 
 En estas preguntas encontramos la complejidad con la que tendremos que trabajar
 
+## Para poder encontrar las fallas y poder apreciar mejor el proceso se procede a simular un ambiente virtual, vamos a poder tener una idea de las tareas diarias que se procesan y como mejorar el metodo de trabajo
+
+Para ejecutar la simulacion del proceso entre a [simulador]: https://www.bpsimulator.com/run/ y abra el archivo [simulacion de la sublimadora.json ] y luego en play
+
+
+
 
 
 
