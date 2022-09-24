@@ -46,7 +46,7 @@ Habiendo explicado brevemente el problema general, y restringido su complejidad 
 
 #### Elementos Del Sistema
 
-Persona: Elemento principal del sistema y sobre la cual se hace el estudio para dar solución a las situaciones complejas que se le presentan deribadas a una discapacidad visual.
+Persona: Elemento principal del sistema y sobre la cual se hace el estudio para dar solución a las situaciones complejas que se le presentan derivadas a una discapacidad visual.
 * Computador: Herramienta tecnológica imprescindible para la persona, con la que se pretende realizar sus actividades laborales.
 * Conexión A Internet: Herramienta tecnológica que permite a la persona, por medio de su computador, comunicarse con su equipo de trabajo, así como entregar sus tareas asignadas.
 * Personas Externas: Estos pueden ser compañeros de trabajo, familiares, amigos, o cualquier persona externa al individuo que usa el computador.
