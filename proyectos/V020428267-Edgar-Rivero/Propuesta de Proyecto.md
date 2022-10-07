@@ -49,7 +49,7 @@ Resutados obtenidos
 ![Proceso](simulacion_resultados1.png)
 
 Como mejorar los tiempos de trabajo? 
-Con la ayuda de los resultados de la simulacion nos damos cuenta que se necesitaria otro disenador para mejorar tiempos
+Con la ayuda de los resultados de la simulacion nos damos cuenta que se necesitaria otro disenador para mejorar tiempos ya que uno solo solo logra hacer al dia 2 tareas mientras que en otras areas 
 
 Como cumplir con los pedidos sin tantos errores?
 Esta pregunta fue agregada especialmente para tener claro que no todas las interrogantes se pueden responder con la simulacion y no tiene nada de malo solo son aspectos a tener en cuenta
