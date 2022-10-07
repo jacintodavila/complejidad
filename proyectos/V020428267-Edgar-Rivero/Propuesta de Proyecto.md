@@ -31,6 +31,42 @@ En estas preguntas encontramos la complejidad con la que tendremos que trabajar
 
 Para ejecutar la simulacion del proceso entre a [simulador]: https://www.bpsimulator.com/run/ y abra el archivo [simulacion de la sublimadora.json ] y luego en play
 
+Se les vera algo como esto
+
+![Proceso](simulacion.png)
+
+Para iniciar la simulacion le damos click en play
+
+![Proceso](simulacion_play.png)
+
+Al darle doble click sobre cualquier area de trabajo se pueden ver los detalles de las tareas 
+
+![Proceso](simulacion_detalles.png)
+
+# Con la ayuda de la simulacion podemos responder los interrogantes
+
+Resutados obtenidos
+![Proceso](simulacion_resultados1.png)
+
+Como mejorar los tiempos de trabajo? 
+Con la ayuda de los resultados de la simulacion nos damos cuenta que se necesitaria otro disenador para mejorar tiempos
+
+Como cumplir con los pedidos sin tantos errores?
+Esta pregunta fue agregada especialmente para tener claro que no todas las interrogantes se pueden responder con la simulacion y no tiene nada de malo solo son aspectos a tener en cuenta
+
+
+Cual seria la cantidad necesaria de empleados para este proceso (teniendo en cuenta la maquinaria que se tiene)?
+1 disenadores, 3 costureras y 1 cortadores y un recepcionista
+
+Cuantas horas diarias serian necesarias para cada empleado para poder cumplir con el trabajo y cometer los minimos errores?
+Con 8 horas diarias se puede mantener un buen progreso
+
+
+Como maximizar ganancias?
+con contratar un nuevo disenador(a) se puede maximizar las ganancias 
+
+
+
 
 
 
