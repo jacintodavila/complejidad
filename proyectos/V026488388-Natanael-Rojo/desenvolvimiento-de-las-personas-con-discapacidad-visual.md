@@ -211,6 +211,65 @@ Actualmente la rama de la computación de la [inteligencia artificial][inteligen
 
 Otro detalle es que a veces de las situaciones desafortunadas, se pueden destacar ciertas cosas positivas. La pandemia del coronavirus si bien vino a cambiar completamente nuestra forma de vivir, y causó pérdidas humanas considerables, también obligó a cambiar la modalidad de ciertos trabajos para hacerlos adaptados a las nuevas políticas de sanidad. Trayendo ventajas para las personas con discapacidad visual, ya que ahora no es necesario salir de su hogar para poder ser productivos, y claro, esto no solo aplica a las personas con discapacidad, pero si les da una facilidad que antes no era tan común.
 
+## Simulación 
+
+### Aprendizaje
+
+Una vez concluida la sistematización del caso de estudio, el siguiente paso lógico sería probar la capacidad de estas instrucciones para resolver las diferentes situaciones de una persona con discapacidad en el ámbito ya mencionado. Para lograr esta demostración, voy a exponer mis experiencias con estas herramientas, desde la familiarización con la distribución del teclado de un computador, hasta el uso del lector de pantalla y el sistema operativo, también, hablaré acerca de la adaptación que puede darse para manejar un nuevo lector de pantalla teniendo los conocimientos del uso de otro anterior. Uno de los primeros pasos en la sección de la sistematización habla acerca de conocer la distribución del teclado del computador, para al momento de manejar el computador por medio del mismo, seamos lo más rápidos posibles.
+
+Completar este paso, como mensioné anteriormente, me llevó más o menos 5 semanas de práctica (en el momento que empece este aprendizaje tenía muy poca experiencia con los computadores). Uno de los ejercicios que realicé fue redacción de documentos, esto para acostumbrarme a la forma de usar las aplicaciones de ofimática, pero además, sirvió para agilizar la escritura con el teclado y memorizar la posición de las teclas; esto lo hice aproximadamente de 3 veces por semana, con una duración de alrededor de 3 horas. Desde luego, alguien podría aumentar el numero de repeticiones para disminuir el tiempo de aprendizaje, o si ya tenía práctica con un computador, lo puede completar en un tiempo muchísimo menor al que me llevó a mi.
+
+Otro ejercicio que realicé, fue hacer investigaciones para asignaturas, o simplemente temas de interés para mi. Esto ayudó bastante a ser rápido al moverse entre las páginas web, que, por lo general, siempre tienen una estructura muy parecida entre sí; por lo que podemos desplazarnos entre los distintos tipos de encabezados, tablas, enlaces, entre otros elementos de una página. También, sirvió para aprender atajos del navegador (en mi caso Google Chrome), que incluso ahora sigo usando. Por último, lo que también hice, fue desplazarme por el sistema operativo en general para familiarizarme con él, ya que como dije, ese tipo de cosas eran nuevas para mi en ese entonces. Como se puede ver, al menos para este paso, la solución propuesta en la sistematización se asemeja bastante a la realidad que yo experimenté.
+
+Una vez que me sentí cómodo con el uso del computador por medio del teclado, pude empezar a aprender el manejo del lector en si mismo. Si bien en el paso anterior parecía que se hacía esto, la realidad es que sólo se manejaba el computador con el teclado. En mi caso no tenía conocimiento de la documentación oficial del software que usaba en ese entonces, en ese momento lo aprendí a manejar gracias a otra persona que me enseñó. Sin embargo, como lo mencioné en la sección anterior, la documentación del software NVDA estará en la sección de enlaces, y es muy importante leerla, ya que nos dice todo lo que se puede hacer con este software de accesibilidad. Algunas de las funcionalidades mensionadas en la documentación como el modo foco, extensiones, atajos propios del lector, los fui aprendiendo con el tiempo (experimentación con el computador), pero con la documentación, esto está mucho mejor estructurado.
+
+### Uso Del Software De Accesibilidad Para Diferentes Actividades
+
+Al completar el paso de aprendizaje del software de accesibilidad y la distribución del teclado del computador, pude ser independiente en el uso del mismo ya que ahora no necesitaba ayuda externa para usarla, o, al menos, para la gran mayoría de cosas cotidianas; aunque más adelante hablaré acerca de ciertas situaciones que no pude hacer por mi mismo. Enviar correos electronicos, realizar actividaddes de investigación por internet, redacción de documentos, o simplemente distracción, fueron cosas que ahora estaban disponibles gracias al aprendizaje anterior.
+
+Aunque en la situación en que más uso le di a este conocimiento fue cuando ingresé a mis estudios universitarios. Como mencioné anteriormente, el caso que trataríamos era el de una persona que se desenvuelve en el área informática. En mi caso, mi carrera es ingeniería de sistemas, la cual está relacionada estrechamente con dicha área. En este sentido, el computador fue, y sigue siendo una herramienta crucial para mi, ya que con ella pude consumir el contenido de los cursos, realizar los exámenes parciales, comunicarme con los profesores y compañeros, etc.
+
+Sin embargo, no todo fue tan sencillo al principio de la carrera. Los primeros cursos como cálculo, física, mecánica racional, sistemas de representación, fueron un verdadero desafío, debido a la cantidad de gráficos y símbolos que tienen, pero además, dichos gráficos se usan para explicar conceptos o ejemplificar ideas que, como dije antes, el lector de pantalla no puede interpretar. Estas eran las situaciones que mencioné arriba, que no pude resolver de forma independiente con el computador. En mi caso, tuve que buscar personas externas para que me ayudaran a comprender dichos gráficos, incluso, pagarle a estas personas capacitadas, porque en este caso no basta solo explicar el gráfico, sino que hay que entender que significa cada parte del mismo. Estas situaciones se presentaron hasta un poco más de la mitad de la carrera. Las mejoras continuas al lector de pantalla podían ayudar un poco a solucionar partes del problema, pero lo principal, que era el reconocimiento de imágenes, seguía presente.
+
+Aunque viéndolo desde otro enfoque, el lector me ayudo mucho en las materias como programación, ya que todo se hace por medio de codigos escritos en un editor de texto, y en ese sentido, el lector de pantalla es especialmente útil. Una herramienta que me ha sido de mucha ayuda para la programación, es el editor de texto Visual Studio Code, ya que este es completamente compatible con el lector de pantalla que uso en la actualidad (NVDA), porque he usado otros editores, pero hay ocasiones que ciertas funcionalidades no son compatibles con el lector, o de plano no es compatible.
+
+Otro caso en el que el lector es especialmente útil, es en el consumo de contenido de libros digitales. En mis estudios universitarios la maoria de información técnica está disponible en libros, o por internet, pero en el caso de los libros digitales, es especialmente cómodo para mí consumir su contenido, debido a que es texto, el lector puede leerlo sin dificultades. Otra ventaja del lector en este caso, es la rapidez con la que se puede leer. En varias oportunidades pude completar secciones, o capitulos de un libro gracias a la velocidad alta del lector, que alguien con un uso medio del lector, ya puede estar adaptado a ese tipo de velocidad en la voz, haciendo mucho más eficiente el estudio o busqueda de información.
+
+### Experiencia De Adaptación Con Diferentes Sistemas operativos.
+
+En la subsección anterior mencioné que al entrar a la carrera universitaria el lector de pantalla fue de mucha utilidad, tuve que adaptarme a otro entorno de trabajo. Como se dijo en la sección de la sistematización, suponemos un entorno de trabajo bajo el sistema operativo Windows, y era el que yo utilizaba antes de entrar a la carrera. Sin embargo, en ese momento que inicié mis estudios (2016), era muy complicado programar de forma cómoda en dicho sistema operativo; debido a esto, tuve que usar un sistema operativo basado en Linux, en particular, Debian. Esta adaptación fue relativamente sencilla, ya que el uso del lector de pantalla (Orca) era muy parecido al que usaba anteriormente, pero, no puedo decir lo mismo del sistema operativo.
+
+Mi experiencia con este tipo de sistema operativo no fue cómoda para usarlo. El lector era compatible únicamente con las aplicaciones que estaba preinstaladas con el sistema operativo, por lo que si quería instalar un editor de texto que pudiera hacer mas rapida la programación, u otras tareas, no lo podia hacer, ya que no era compatible; esto me pasó con varias aplicaciones, además de que la navegación por el sistema operativo era incómoda para mi, aunque, podría haber sido por la inexperiencia que tenía con dicho sistema.
+
+Tuve que usar sistemas basados en linux hasta la mitad de la carrera, aproximadamente. Hasta que microsoft implementó una funcionalidad llamada Windows Subsystem For Linux (WSL), la cual permite tener una terminal con un core completamente basado en Linux. Esto da la flexibilidad de los sistemas Linux, pero pudiendo usar Windows, y esto en mi caso, fue muy bueno, porque pude volver al entorno que estaba acostumbrado, y seguir haciendo y ejecutando los programas sin dificultad.
+
+Este fue uno de los casos que se mencionó en la sistematización, de que a veces hay que esperar actualizaciones para que algunas cosas sean compatibles, que para este caso fue la facilidad de programación. Con esto no quiero decir que el lector NVDA sea mejor que Orca, ni mucho menos que Windows sea mejor sistema que los basados en Linux, solo que en mi experiencia, me fue mejor con Windows y NVDA, y son los sistemas que actualmente utilizo para desarrollo.
+
+### Conclusión
+
+En esta sección se vió que la experiencia que podría tener una persona con discapacidad visual con el aprendizaje relacionado al software de accesibilidad, la distribución del teclado de su computador, y las actividades que es capáz de realizar de forma independiente se ajusta bastante a lo expuesto en la sección de la sistematización. También, se vio que depende del ámbito en el que se vaya a usar, el lector puede ser mas que suficiente para que una persona con discapacidad sea independiente en las tareas relacionadas con el computador.
+
+En este sentido, el caso que se observó fue el de una persona que estudia la carrera de ingeniería de sistemas, y en particular, para el consumo de contenido gráfico, se hace bastante difícil, al menos, hasta los momentos. La sistematización no genera una solución particular para estos casos, teniendo que necesitar de la ayuda de personas externas con cierto conocimientos particulares, para poder entender que quieren decir estas imágenes.
+
+Por otro lado, el caso relacionado a la programación en sí, es bastante cómodo para las personas con discapacidad visual, ya que como se mencionó, el editor de texto [Visual Studio Code][Visual Studio Code], es totalmente compatible con el software de accesibilidad, además, otros editores de texto como [sublime Text][Sublime Text], [Atom][Atom], entre otros, también lo son. Los lectores de pantalla al ser software dedicado a la misma finalidad, nos da la ventaja que todos se pueden utilizar de una manera muy parecida unos a otros, como se vio en el caso de simulación, se puede aprender la forma de utilizar un lector de pantalla diferente al que la persona este acostumbrada actualmente sin mayores dificultades, de echo, es recomendable hacerlo, por si se presentan casos en que algunas aplicaciones no son compatibles con un lector, puede darse el caso que lo sea con otro.
+
+## Referencias
+
+* [Atom][Atom]
+* [Inteligencia Artificial]
+* [Documentación Oficial De NVDA]
+* [Jaws][Jaws]
+* [Linux][Linux]
+* [MacOS]
+* [Narrador][Narrador]
+* [NVDA][NVDA]
+* [Orca][Orca]
+* [Sublime Text]
+* [Visual Studio Code]
+* [VoiceOver][VoiceOver]
+* [Windows][Windows]
+
+
 [Narrador]: https://support.microsoft.com/es-es/windows/cap%C3%ADtulo-1-introducci%C3%B3n-al-narrador-7fe8fd72-541f-4536-7658-bfc37ddaf9c6
 [Orca]: https://help.gnome.org/users/orca/stable/introduction.html.es
 [VoiceOver]: https://www.apple.com/es/voiceover/info/guide/_1121.html#:~:text=VoiceOver%20es%20un%20lector%20de,activar%20VoiceOver%20pulse%20Comando%20%2B%20F5.
@@ -221,3 +280,6 @@ Otro detalle es que a veces de las situaciones desafortunadas, se pueden destaca
 [MacOS]: https://es.wikipedia.org/wiki/MacOS
 [documentación oficial de NVDA]: https://nvda.es/documentacion/guia-de-usuario-de-nvda/
 [inteligencia artificial]: https://es.wikipedia.org/wiki/Inteligencia_artificial
+[Visual Studio Code]: https://code.visualstudio.com
+[Sublime Text]: https://www.sublimetext.com
+[Atom]: http://atom.io
