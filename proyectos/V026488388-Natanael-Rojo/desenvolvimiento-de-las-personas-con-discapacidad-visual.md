@@ -17,7 +17,6 @@ En base a estas interrogantes es claro que una persona con discapacidad visual n
 * ¿ Es posible que una persona frente a estas situaciones pueda adaptarse para afrontarlas y superarlas?
 * ¿Cuáles serían alternativas optimas para una persona con discapacidad visual de realizar las actividades cotidianas?
 * ¿Cuáles herramientas serían útiles para el propósito de completar las actividades?
-* ¿Cuáles herramientas serían útiles para el propósito de completar las actividades?
 * ¿habría situaciones que actualmente no podrían ser superadas por una persona con este tipo de discapacidad?
 
 ## Especificación.
@@ -46,7 +45,7 @@ Habiendo explicado brevemente el problema general, y restringido su complejidad 
 
 #### Elementos Del Sistema
 
-Persona: Elemento principal del sistema y sobre la cual se hace el estudio para dar solución a las situaciones complejas que se le presentan derivadas a una discapacidad visual.
+* Persona: Elemento principal del sistema y sobre la cual se hace el estudio para dar solución a las situaciones complejas que se le presentan derivadas a una discapacidad visual.
 * Computador: Herramienta tecnológica imprescindible para la persona, con la que se pretende realizar sus actividades laborales.
 * Conexión A Internet: Herramienta tecnológica que permite a la persona, por medio de su computador, comunicarse con su equipo de trabajo, así como entregar sus tareas asignadas.
 * Personas Externas: Estos pueden ser compañeros de trabajo, familiares, amigos, o cualquier persona externa al individuo que usa el computador.
@@ -81,6 +80,7 @@ La interacción principal, es la que se da directamente entre la persona y el co
 Con estas restricciones establecidas, el siguiente paso será dar respuesta a las preguntas planteadas en la seccion anterior.
 
 ### ¿Qué ventajas presenta la jornada de trabajo remoto ante la jornada de trabajo clásica?
+
 En las secciones anteriores se mencionó que para una persona con discapacidad visual es más complicado trasladarse desde su casa hasta su hogar de trabajo. Para una persona que no tiene este tipo de discapacidad, dependiendo de que tan alejado esté su lugar de trabajo de su hogar, le puede tomar mayor, o menor tiempo el llegar hasta ahí; supongamos que le toma 10 minutos llegar a la parada de autobús (asumiendo, de nuevo, que no tiene vehículo propio), una vez ahí, le puede llevar de 5, a 15 minutos esperar el transporte que lo lleve a su destino. Para este ejemplo, asumimos que el trayecto en el transporte dura aproximadamente de 15, a 20 minutos para llegar a su destino.
 
 Entonces, haciendo una sumatoria de los datos anteriores con un tiempo de llegada a la parada de autobús de 10 minutos, un tiempo de espera de 5 minutos, y un tiempo en el transporte de 15 minutos, obtenemos que le tomaria 30 minutos llegar a su trabajo, en este ejemplo particular. Ahora, en el caso de una persona con discapacidad visual, estos tiempos aumentan, ya que no pueden desplazarce con la misma rapidez con la que lo hace una persona con el sentido de la vista promedio, y menos aún, en un entorno tan dinámico como lo puede ser la ciudad.
@@ -117,6 +117,7 @@ Otra característica básica de un magnificador de pantalla es el seguimiento de
 Adicionalmente, los magnificadores de pantalla ofrecen otras mejoras visuales como aumentar el tamaño del puntero del ratón o del cursor de inserción de texto. Además, se puede combinar la magnificación con la lectura de contenido como un lector de pantalla.
 
 ### Uso del computador
+
 Como se definió en la sección dedicada al software de accesibilidad, estos programas son los que servirán de ayuda para manejar el computador. Lo primero que se debe hacer es activarlo desde el mismo sistema operativo que se este usando, o, si se quiere usar alguna alternativa, de las mencionadas para Windows, se puede descargar desde su sitio oficial. Para activar el narrador en Windows se debe hacer lo siguiente:
 1. Abrir la aplicacion configuración.
 2. Ir a la seccion accesibilidad.
@@ -189,6 +190,7 @@ Si. Hemos visto en esta sistematización que una persona con discapacidad visual
 ### ¿Cuáles serían alternativas óptimas para una persona con discapacidad visual de realizar las actividades cotidianas?
 
 La alternativa es usar de una manera diferente el computador. Esta manera es interactuando con él por medio del teclado, principalmente. conocer de forma detallada su herramienta de trabajo, es decir, el computador, la distribución de teclado, el nombre de cada tecla, combinaciones de teclas que le permiten ejecutar acciones en el sistema operativo, o aplicación que esté usando en ese momento, son claves para la nueva forma en que va a usar su computador.
+
 ### ¿Cuáles herramientas serían útiles para el propósito de completar las actividades?
 
 Para este contexto, el computador será la herramienta más útil a la cual una persona con discapacidad puede recurrir. Además, otra cosa fundamental son las herramientas de software que facilitan la interaccion para dichas personas. No solo porque le permitirá realizar su trabajo, sino que puede usarlos para cualquier ámbito más allá del laboral.
