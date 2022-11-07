@@ -255,19 +255,23 @@ En este sentido, el caso que se observó fue el de una persona que estudia la ca
 
 Por otro lado, el caso relacionado a la programación en sí, es bastante cómodo para las personas con discapacidad visual, ya que como se mencionó, el editor de texto [Visual Studio Code][Visual Studio Code], es totalmente compatible con el software de accesibilidad, además, otros editores de texto como [sublime Text][Sublime Text], [Atom][Atom], entre otros, también lo son. Los lectores de pantalla al ser software dedicado a la misma finalidad, nos da la ventaja que todos se pueden utilizar de una manera muy parecida unos a otros, como se vio en el caso de simulación, se puede aprender la forma de utilizar un lector de pantalla diferente al que la persona este acostumbrada actualmente sin mayores dificultades, de echo, es recomendable hacerlo, por si se presentan casos en que algunas aplicaciones no son compatibles con un lector, puede darse el caso que lo sea con otro.
 
+### Evidencias
+
+Para demostrar las capacidades que una persona puede obtener siguiendo la sistematizaciòn planteada en este documento, se puede hacer click [aquí](https://www.youtube.com/watch?v=q5pItGGNQ5s&ab_channel=NatanaelRojo)
+
 ## Referencias
 
 * [Atom][Atom]
-* [Inteligencia Artificial]
-* [Documentación Oficial De NVDA]
+* [Inteligencia Artificial][Inteligencia Artificial]
+* [Documentación Oficial De NVDA][Documentación Oficial De NVDA]
 * [Jaws][Jaws]
 * [Linux][Linux]
-* [MacOS]
+* [MacOS][MacOS]
 * [Narrador][Narrador]
 * [NVDA][NVDA]
 * [Orca][Orca]
 * [Sublime Text]
-* [Visual Studio Code]
+* [Visual Studio Code][Visual Studio Code]
 * [VoiceOver][VoiceOver]
 * [Windows][Windows]
 
