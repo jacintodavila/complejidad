@@ -1,0 +1,10 @@
+Jesús Agustin Peña Leon
+
+Complejidad y fragilidad en la distribución de gasolina en Venezuela
+
+
+En Venezuela, hay un gran problema para conseguir suficiente gasolina. La forma en que se distribuye tiene muchos problemas que dificultan que la gente encuentre combustible. El sistema no funciona bien y provoca largas colas y frustración.
+
+La verdad es más complicada porque el sistema de distribución es como un rompecabezas con muchas piezas interconectadas: la infraestructura (carreteras, estaciones de servicio), los empleados y las normas desempeñan un papel. Cuando una pieza no funciona correctamente, afecta a todo lo demás, es como una reacción en cadena.
+
+El sistema se daña fácilmente bajo tensión, cualquier error o problema por mas pequeño que sea, interrupción, un problema con la infraestructura o un suministro limitado, incluso un chofer enfermo puede causar grandes problemas. En lugar de eso, debemos intentar de hacerlo más fuerte ante los retos.
