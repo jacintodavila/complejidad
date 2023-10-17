@@ -1,0 +1,56 @@
+**Variables Globales:**
+- `time-factor` representa un factor de escala de tiempo que convierte las semanas en horas por tick.
+- `current-time` lleva un seguimiento del tiempo simulado en semanas.
+
+**Breed:**
+- `truck-agents`, `stations`, `distribution-centers` y `final-customers` son los grupos de agentes (breeds) que interactúan en la simulación.
+
+**Propiedades de los Agentes:**
+- Los `distribution-centers` tienen una propiedad llamada `distribution-center-gas`, que representa la cantidad de gas en el centro de distribución. Al inicio, tienen una cantidad fija de gas definida por `initial-distribution-center-gas`.
+- Las `stations` tienen propiedades como `fuel-capacity`, que representa la capacidad de almacenamiento de gasolina de la estación, y `gas-consumption-rate`, que es la velocidad de consumo de gasolina en la estación.
+- Los `truck-agents` tienen propiedades como `moving-tank`, que es el tanque de gasolina en movimiento, y `transportation-tank`, que es el tanque de gasolina para transporte.
+- Los `final-customers` tienen una propiedad `gas-level`, que representa la cantidad de gasolina que tienen.
+
+**Función `setup`:**
+- Limpia la simulación.
+- Crea un centro de distribución, una estación de servicio, camiones y clientes finales.
+- Inicializa las variables de tiempo y reinicia los ticks.
+
+**Función `create-distribution-center`:**
+- Crea un centro de distribución con forma de triángulo, color verde, y le asigna una cantidad inicial de gasolina definida en `initial-distribution-center-gas`.
+
+**Función `create-service-station`:**
+- Crea una estación de servicio con forma de círculo, color rojo y le asigna una capacidad de almacenamiento de gasolina (`fuel-capacity`) y una velocidad de consumo (`gas-consumption-rate`).
+
+**Función `create-trucks`:**
+- Crea camiones con forma de camión, les asigna tamaños, tanques de movimiento y transporte, y establece su ubicación inicial en el centro de distribución y la estación de servicio.
+
+**Función `create-final-customer`:**
+- Crea clientes finales con forma de coche, les asigna tamaños, colores, ubicaciones aleatorias, tasas de consumo de gasolina y niveles iniciales de gasolina.
+
+**Función `move-trucks`:**
+- Los camiones se mueven entre el centro de distribución y la estación de servicio. Cuando llegan a uno, se llenan de gasolina y se dirigen al otro.
+
+**Función `refill-moving-tanks`:**
+- Reabastece el tanque de movimiento de los camiones cuando está bajo 100 unidades de gasolina.
+
+**Función `refill-transportation-tanks`:**
+- Reabastece el tanque de transporte de los camiones cuando está vacío.
+
+**Función `update-time`:**
+- Actualiza el tiempo simulado en semanas.
+
+**Función `update-availability`:**
+- Calcula la disponibilidad de gasolina en la estación de servicio y el centro de distribución.
+
+**Función `update-service-station-gas`:**
+- Actualiza la cantidad de gasolina en la estación de servicio y su distribución entre los camiones y clientes finales. Asegura que la estación no se quede sin gasolina.
+
+**Función `go`:**
+- Inicia la simulación y realiza la secuencia de acciones en cada tick.
+- Los camiones se mueven, la gasolina en la estación se actualiza y se muestran los datos.
+
+**Función `show-service-station-gas`:**
+- Muestra la cantidad de gasolina disponible en una de las estaciones de servicio.
+
+En resumen, este código modela un sistema de distribución de gasolina con camiones, estaciones de servicio, centros de distribución y clientes finales. Los camiones se mueven entre el centro de distribución y la estación de servicio para transportar gasolina. La estación de servicio consume gasolina y se asegura de que haya suficiente para todos. Los clientes finales también consumen gasolina y demandan más de la estación. La simulación muestra la cantidad de gasolina disponible en la estación de servicio.
