@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="ConsumoGasolina" default="all" basedir=".">
+    <description>
+      Compile, Run a Galata file ConsumoGasolina.g
+    </description>
+    <taskdef resource="net/sf/antcontrib/antlib.xml"/>
+
+    <!-- Classpath update -->
+    <property name="gcp" location="${basedir}:
+            ${basedir}/../../galatea.jar:
+            ${basedir}/../../lib/javacup-runtime.jar:
+            ${basedir}/../../lib/jfreechart-1.0.12.jar:
+            ${basedir}/../../lib/jcommon-1.0.15.jar"/>
+    
+    <!-- Build .java files -->
+    <target name="g2java" depends="" description="Build Java files.">
+        <echo> Build Java files associated to ${ant.project.name} </echo>
+        <java classname="galatea.gcompiler.G2Java"
+            classpath="${gcp}"
+            dir="${basedir}"
+	    fork="true">
+            <arg value="${ant.project.name}.g" />
+        </java>
+    </target>
+
+    <!-- Build .class  files -->
+    <target name="compile" depends="" description="Compile Java files.">
+        <echo> Build .class associated to ${ant.project.name} </echo>
+        <javac srcdir="${basedir}" destdir="${basedir}"
+            includeantruntime="false"
+            classpath="${gcp}">           
+        </javac>
+    </target>
+
+     <!-- Run .class  files -->
+    <target name="run" depends="" description="Run Class files.">
+        <echo> Run .class associated to ${ant.project.name} </echo>
+        <java classname="consumogasolina.Model"
+            classpath="${basedir}:${gcp}"
+            dir="${basedir}"
+	    fork="true">
+        </java>
+    </target>
+
+    <!-- Compile, Run and Check Example -->
+    <target name="all" depends="g2java,compile,run" description="Compile, Run and Check whole Example">
+    </target>
+
+    <!-- Clean generated files associated to Example -->
+    <target name="clean" depends="">
+	<delete>
+            <fileset dir="${basedir}" includes="**/*.class **/*.java **/*.dat **/*.trc **/*.sta **/*.txt"/>
+        </delete>
+        <delete includeemptydirs="true">
+            <fileset dir="${basedir}">
+                <type type="dir"/>
+            </fileset>
+        </delete>
+    </target>
+
+</project>
