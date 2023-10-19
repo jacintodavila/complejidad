@@ -3,25 +3,25 @@ Estacion de servicio en galatea
 NETWORK
     Entrada (I){
         Capacidad = UNIFI(20, 40); 
-        IT(EXPO(1.0));
+        IT(POISSSON(2.0));
         SENDTO(Taquilla);
     }
     Taquilla (R) {
-        STAY(GAUSS(5.0,2.0));
+        STAY(EXPO(15.0));
         total=dolar*Capacidad;
         RELEASE SENDTO(Servidor);     
     }
     Servidor (R) {
-        STAY(GAUSS(5.0,2.0));
+        STAY(NORM(5.0,2.0));
         RELEASE {
         	Diff = Tanque-Capacidad; 
-          caja=caja+total;
+         
         	IF (Diff>0) {
+                caja=caja+total;
         		Tanque = Tanque-Capacidad;
         		SENDTO(Salida);
         	} ELSE {
-            caja=caja-total;
-        		SENDTO(Resentimiento);
+                   		SENDTO(Resentimiento);
         	}
         }
     }
@@ -31,7 +31,7 @@ NETWORK
     Resentimiento (E) {
 
     	WRITE("En el minuto: %6.2f, sale un vehiculo que no pudo cargar %f litros, se hizo una devolucion en dolares de %f, se tiene en caja un total en dolares de: %f\n", TIME, Capacidad, total,caja );
-      ENDSIMUL;
+    ENDSIMUL;
     }
 INIT
   TRACE;
