@@ -1,11 +1,12 @@
 breed [truck-agents truck]
 breed [stations station]
 breed [distribution-centers distribution-center]
-breed [final-customers final-customer] ; New breed for final customers
 
 globals [
   time-factor ; Time scaling factor (hours per tick)
   current-time ; Simulated time in weeks
+  current-month ; To track the current month
+  monthly-gas-delivered ; To track the monthly total of gasoline delivered
 ]
 
 distribution-centers-own [
@@ -17,19 +18,13 @@ stations-own [
   fuel-capacity
   gas-consumption-rate ; Gas consumption rate at the service station
   service-station-gas
+  service-station-gas-threshold ; Minimum gas level for the service station
 ]
 
 truck-agents-own [
-  moving-tank
   transportation-tank
   at-distribution-center?
   at-service-station?
-  gas-consumption-rate ; Add this property to truck-agents
-]
-
-final-customers-own [
-  gas-consumption-rate
-  gas-level
 ]
 
 to setup
@@ -37,53 +32,43 @@ to setup
   create-distribution-center
   create-service-station
   create-trucks
-  create-final-customer ; Add this line to create final customers
-  set time-factor 168 ; 168 hours in a week
+  set time-factor 24 ; 24 hours in a day
   set current-time 0 ; Initialize current-time
+  set current-month 0 ; Initialize current month
+  set monthly-gas-delivered 0 ; Initialize the monthly total of gasoline delivered
   reset-ticks
 end
 
 to create-distribution-center
-  create-distribution-centers 1 [
+  create-distribution-centers 4 [
     set shape "triangle"
-    set size 1
+    set size 2
     set color green
-    setxy 10 0
-    set distribution-center-gas 100000 ; Set an initial amount of gas
+    setxy random-xcor random-ycor
+    set distribution-center-gas 10000000 ; Set an initial amount of gas
   ]
 end
 
 to create-service-station
-  create-stations 1 [
+  create-stations 500 [
     set shape "circle"
-    set size 1
+    set size 0.5
     set color red
-    setxy 130 0
+    setxy random-xcor random-ycor
     set fuel-capacity 350000
-    set gas-consumption-rate 3000 ; Gas consumption rate at the service station (e.g., 100 liters per hour)
-    set service-station-gas 350000 ; Set an initial amount of gas
+    set gas-consumption-rate 3000 ; Fixed gas consumption rate at the service station
+    set service-station-gas 180000 ; Set an initial amount of gas
+    set service-station-gas-threshold 70000 ; Minimum gas level for the service station
   ]
 end
 
 to create-trucks
-  create-truck-agents 10 [
+  create-truck-agents 100 [
     set shape "truck"
     set size 2
-    set moving-tank 600
-    set transportation-tank 35000
+    set transportation-tank 18000
     set at-distribution-center? true
     set at-service-station? true
-  ]
-end
-
-to create-final-customer
-  create-final-customers 100 [
-    set shape "car"
-    set size 1
-    set color blue
-    setxy random-xcor random-ycor
-    set gas-consumption-rate 4000 ; Increase the consumption rate to exceed service station gas
-    set gas-level 10 ; Initial gas level for customers
   ]
 end
 
@@ -91,6 +76,9 @@ to move-trucks
   ask truck-agents [
     let destination nobody
     ifelse at-distribution-center? [
+      if transportation-tank = 0 [
+        set transportation-tank 18000
+      ]
       set destination one-of stations with [shape = "circle"]
       set at-distribution-center? false
       set at-service-station? true
@@ -102,90 +90,63 @@ to move-trucks
 
     if destination != nobody [
       move-to destination
-      set moving-tank moving-tank - distance destination
-    ]
-  ]
-end
-
-to refill-moving-tanks
-  ask truck-agents [
-    if moving-tank <= 100 [
-      ifelse at-distribution-center? [
-        set moving-tank 600
-        set at-service-station? true
-        set at-distribution-center? false
-        face one-of stations with [shape = "circle"]
-      ][
-        set moving-tank 600
-        set at-distribution-center? true
-        set at-service-station? false
-        face one-of distribution-centers with [shape = "triangle"]
-      ]
-    ]
-  ]
-end
-
-to refill-transportation-tanks
-  ask truck-agents [
-    if transportation-tank = 0 [
-      ifelse at-distribution-center? [
-        set transportation-tank 35000
-      ][
-        set at-distribution-center? true
-        set at-service-station? false
-        face one-of stations with [shape = "circle"]
-      ]
     ]
   ]
 end
 
 to update-time
-  let hours-per-week 168
+  let hours-per-day 24
   let time-passed ticks * time-factor
-  set current-time time-passed / hours-per-week
+  set current-time time-passed / hours-per-day
 end
 
 to update-availability
   set service-station-gas sum [transportation-tank] of truck-agents
-  set distribution-center-gas distribution-center-gas - (35000 * count truck-agents)
+  set distribution-center-gas distribution-center-gas - (18000 * count truck-agents)
   if distribution-center-gas <= 0 [
     stop
   ]
 end
 
 to update-service-station-gas
+  let gas-to-deliver 0 ; Initialize the variable
+
   ; Decrease service station gas based on the gas consumption rate
   ask stations with [shape = "circle"] [
-    let available-gas ifelse-value (any? truck-agents) [min [transportation-tank] of truck-agents] [0]
-    let consumed-gas ifelse-value (any? final-customers) [30] [0]
-    let total-available-gas available-gas + consumed-gas
+    let consumption gas-consumption-rate
+    if service-station-gas < consumption [
+      set consumption service-station-gas
+    ]
+    set service-station-gas service-station-gas - consumption
+    ; Call a truck to deliver gas only if service-station-gas is critically low (e.g., 20% remaining)
+    if service-station-gas < (fuel-capacity * 0.2) [
+      let need-gas fuel-capacity - service-station-gas
+      let available-trucks truck-agents with [at-distribution-center?]
+      if any? available-trucks [
+        let delivering-truck min-one-of available-trucks [distance one-of stations with [shape = "circle"]]
+        ifelse [transportation-tank] of delivering-truck >= need-gas [
+          set gas-to-deliver need-gas
+        ] [
+          set gas-to-deliver [transportation-tank] of delivering-truck
+        ]
+        ask delivering-truck [
+          set transportation-tank (transportation-tank - gas-to-deliver)
+        ]
+        set service-station-gas (service-station-gas + gas-to-deliver)
+      ]
+    ]
 
-    ifelse total-available-gas >= gas-consumption-rate [
-      ; TRUE condition: There is enough gas
-      ifelse available-gas >= gas-consumption-rate [
-        set service-station-gas service-station-gas - gas-consumption-rate
-        ask truck-agents [
-          set transportation-tank transportation-tank - (gas-consumption-rate - available-gas)
-        ]
-      ] [
-        ; If there's not enough gas for all customers, distribute it among them proportionally
-        let shortfall gas-consumption-rate - available-gas
-        ask truck-agents [
-          ifelse available-gas > 0 [
-            let share min (list available-gas (gas-consumption-rate / count truck-agents))
-            set transportation-tank transportation-tank - (share - available-gas)
-            set service-station-gas service-station-gas - share
-          ] [
-            set transportation-tank transportation-tank - (gas-consumption-rate / count truck-agents)
-          ]
-        ]
-      ]
-    ] [
-      ; FALSE condition: There's not enough gas at the service station
-      set service-station-gas 0
-      ask truck-agents [
-        set transportation-tank transportation-tank - gas-consumption-rate
-      ]
+    ; Update the monthly total of gasoline delivered
+    set monthly-gas-delivered (monthly-gas-delivered + consumption)
+
+    ; Check if a month has passed
+    if current-time >= (current-month + 1) * 30 [
+      ; Calculate and print the monthly average along with the month number
+      let average-gas-delivered (monthly-gas-delivered / (current-time / 30))
+      let current-month-number ((current-month mod 12) + 1) ; Count months from 1 to 12
+      print (word "Month " current-month-number ": Monthly Average Gas Delivered: " average-gas-delivered)
+      ; Update current month
+      set current-month (current-month + 1)
     ]
   ]
 end
@@ -193,24 +154,12 @@ end
 to go
   if ticks < 1000 [
     if ticks = 0 [setup]
-
     ask truck-agents [
       move-trucks
     ]
-
     update-service-station-gas ; Update service station gas
-    show-service-station-gas
-    refill-moving-tanks
-    refill-transportation-tanks
     update-time
     tick
-    ; print current-time
-  ]
-end
-
-to show-service-station-gas
-  ask one-of stations with [shape = "circle"] [
-    show (word "Service Station Gas Available: " service-station-gas)
   ]
 end
 @#$#@#$#@
