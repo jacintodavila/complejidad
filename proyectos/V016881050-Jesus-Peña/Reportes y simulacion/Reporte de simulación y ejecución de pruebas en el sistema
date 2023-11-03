@@ -1,26 +1,24 @@
 Informe de simulación
 Sistema de distribución de gasolina en Venezuela
 
-Duración de la simulación: 1000 ticks (cada tick simula 16 horas, se tomaron 16 horas pues era el horario de la estacion de servicio que se tomó como referencia)
+Duración de la simulación: 1000 ticks (cada tick simula 6 horas, se tomaron 6 horas pues era el horario de la estacion de servicio que se tomó como referencia)
 
 Entidades Simuladas:
 - Camiones: 100
 - Centros de Distribución: 4
-- Estaciones de servicio:578
+- Estaciones de servicio: 578
 
 Introducción
 
-Este informe resume los resultados de la simulación del Sistema de Distribución de Gasolina en Venezuela, se tomó como referencia la estación de servicio ”Urdaneta” ubicada en el estado Mérida y se replicó 578 veces en el modelo, el objetivo era modelar y analizar la distribución de gasolina desde los centros de distribución a las estaciones de servicio utilizando una flota de camiones.
+Este informe resume los resultados de la simulación del Sistema de Distribución de Gasolina en Venezuela, se tomó como referencia la estación de servicio ”Urdaneta” ubicada en el estado Mérida y se replicó 578 veces en el modelo, el objetivo era modelar, analizar y estimar la tasa de producción de gasolina para abastecer la demanda desde los centros de distribución a las estaciones de servicio utilizando una flota de camiones.
 
 Configuración e Inicialización:
 
-    • Factor de escala temporal: La simulación utilizó un factor de escala temporal de 16, lo que significa que cada tick representa 16 horas en el mundo simulado. Esto nos permitió acelerar el tiempo para observar el comportamiento del sistema en un periodo más corto, en nuestro caso 1 dia laboral de la estación de servicio tomada como referencia.
+    • Factor de escala temporal: La simulación utilizó un factor de escala temporal de 6, lo que significa que cada tick representa 6 horas en el mundo simulado. Esto nos permitió acelerar el tiempo para observar el comportamiento del sistema en un periodo más corto, en nuestro caso 1 dia laboral (de lunes a sabado) de la estación de servicio tomada como referencia. 
     • Entidades:
-        ◦ Centros de distribución: Se colocaron aleatoriamente cuatro centros de distribución en el mundo de simulación, ya que es aproximadamente el número real en Venzuela. Cada uno tenía inicialmente 1.000.000.000 de litros de gasolina.
+        ◦ Centros de distribución: Se colocaron aleatoriamente cuatro centros de distribución en el mundo simulado, ya que es aproximadamente el número real en Venzuela. Cada uno tenía inicialmente 0 de litros de gasolina.
         ◦ Estaciones de servicio: Se distribuyeron aleatoriamente 578 estaciones de servicio, cada una con una capacidad inicial de 305.000 litros de gasolina, tomado de la capacidad de la estación de servicio ejemplo que cuenta con un tanque para gasolina de 91 octanos con una capacidad de 220.000 litros y un un tanque para gasolina de 95 octanos con una capacidad de 85.000 litros.
         ◦ Camiones: Se creó una flota de 100 camiones. Cada camión tiene un tanque de transporte con una capacidad de 35.000 litros, se tomó como referencia este número, sin embargo existen camiones con capacidades diferentes en la realidad.
-
-
 
 Resultados de la simulación
 
@@ -34,33 +32,44 @@ Movimientos de camiones
 
 Entrega de gasolina
 
-- El suministro de gasolina se basaba en la tasa fija de consumo de las estaciones de servicio, la cual fue tomada del promedio obtenido en el archivo ”Sistema de distribución de gasolina para occidente en el 2011”. Este promedio se calculó de la siguiente manera:
+- El suministro de gasolina se basa en la tasa de consumo de las estaciones de servicio, la cual fue tomada del promedio obtenido de la simulación de mi compañero Ivan Sanchez. Este promedio se calculó de la siguiente manera:
 
-    • Capacidad tanques 91 y 95 – 220000 y 85000 respectivamente
-    • Capacidad total 305000
-    • Promedio de ventas al mes 695725 y 566600 respectivamente (tomado de la tabla)
-    • Total de ventas promedio al mes 1.262.325 litros/mes (tomado de la tabla)
-    • Total de ventas promedio diarias 1.262.325 litros/diarios = 42077,5 (calculado con los valores de la tabla)
-    • Promedio de litros por hora si trabajan 16 horas al dia = 2629,84 litros
+    • Capacidad tanques 91 y 95 – 220000 litros y 85000 litros respectivamente
+    • Capacidad total 305000 litros
+    • Promedio de venta de litros al mes 383469,9 litros (tomado de la simulación de Ivan)(se redondeo la cifra a 383470) 
+    • Total de ventas promedio diarias (De lunes a sabado, asi que estimamos 24 dias laborables al mes y 6 horas por dia) 12782,33 litros (tomado de la simulación de Ivan)
+    • Total de ventas promedio por hora 2130,38 litros (tomado de la simulación de Ivan)(se redondeo la cifra a 2130) 
 
 - Las estaciones piden más gasolina cuando sus niveles descienden significativamente (cuando el combustible restante en el tanque equivale al 20% de su capacidad).
 
-- La simulación registra la media mensual de gasolina suministrada. Estos datos proporcionaron información sobre el rendimiento del sistema a lo largo del tiempo.
-
 Promedios mensuales
 
-La simulación informa de los promedios mensuales de entregas de gasolina. Esta información ayuda a controlar la consistencia de las entregas y a identificar posibles problemas.
+La simulación informa de los promedios mensuales de producción de gasolina. Esta información ayuda a controlar la consistencia de las entregas y a identificar posibles problemas.
 
 Rendimiento del sistema
 
 La simulación nos permite observar el rendimiento global del sistema de distribución de gasolina. Si, efectivamente el sistema trabaja con esos valores se puede garantizar la disponibilidad de gasolina.
-
 Perspectivas
 La simulación pone de manifiesto la solidez del sistema de distribución de gasolina, siempre y cuando el sistema trabaje con esos valores. Algunas de las principales conclusiones son:
 
     • El envío automatizado de camiones garantizó entregas puntuales a las estaciones de servicio.
     • Los niveles de gasolina se mantuvieron con eficacia, incluso ante la elevada demanda de las estaciones de servicio.
     • Los promedios mensuales demostraron el rendimiento constante del sistema de distribución.
+
+Month 1: Distribution Center Monthly Gas Production: 178515300
+Month 2: Distribution Center Monthly Gas Production: 177284160
+Month 3: Distribution Center Monthly Gas Production: 177284160
+Month 4: Distribution Center Monthly Gas Production: 177284160
+Month 5: Distribution Center Monthly Gas Production: 177284160
+Month 6: Distribution Center Monthly Gas Production: 177284160
+Month 7: Distribution Center Monthly Gas Production: 177284160
+Month 8: Distribution Center Monthly Gas Production: 177284160
+Month 9: Distribution Center Monthly Gas Production: 177284160
+Month 10: Distribution Center Monthly Gas Production: 177284160
+Month 11: Distribution Center Monthly Gas Production: 177284160
+Month 12: Distribution Center Monthly Gas Production: 177284160
+
+Al tener una tasa fija de consumo se puede esperar que la tasa de producción para abastecer la demanda tambien sea fija.
 
 Conclusión
 
@@ -79,8 +88,9 @@ Sobre la base de los resultados obtenidos con la simulación, a continuación se
 
 Agradecimientos
 
-Agradezco el apoyo y los recursos proporcionados por parte de los profesores para llevar a cabo esta simulación.
+Agradezco el apoyo y los recursos proporcionados por parte de los profesores..
+
 
 Descargo de responsabilidad
 
-Este informe de simulación se basa en un modelo e hipótesis simplificados. Las condiciones y variables reales pueden variar ya que la muestra tomada es pertenece al año 2011.
+Este informe de simulación se basa en un modelo e hipótesis simplificados. Las condiciones y variables reales pueden variar.

@@ -1,44 +1,57 @@
-    1. Declaración de las Clases Globales:
-        ◦ breed [truck-agents truck]: Define una nueva clase llamada truck-agents que representa camiones.
-        ◦ breed [stations station]: Define una nueva clase llamada stations que representa estaciones de servicio.
-        ◦ breed [distribution-centers distribution-center]: Define una nueva clase llamada distribution-centers que representa centros de distribución.
-    2. Declaración de Variables Globales:
-        ◦ globals: Estas son variables globales utilizadas en todo el modelo.
-            ▪ time-factor: Factor de escala de tiempo (horas por tic).
-            ▪ current-time: Tiempo simulado en semanas.
-            ▪ current-month: Para realizar un seguimiento del mes actual.
-            ▪ monthly-gas-delivered: Para realizar un seguimiento del total mensual de gasolina entregada.
-    3. Variables Propias de los Centros de Distribución:
-        ◦ distribution-centers-own: Define las variables propias de los centros de distribución.
-            ▪ initial-distribution-center-gas: Gas inicial en el centro de distribución (cantidad fija).
-            ▪ distribution-center-gas: Gas en el centro de distribución (cambia con el tiempo).
-    4. Variables Propias de las Estaciones de Servicio:
-        ◦ stations-own: Define las variables propias de las estaciones de servicio.
-            ▪ fuel-capacity: Capacidad de almacenamiento de gasolina en la estación de servicio.
-            ▪ gas-consumption-rate: Tasa de consumo de gasolina en la estación de servicio.
-            ▪ service-station-gas: Gas en la estación de servicio.
-            ▪ service-station-gas-threshold: Nivel mínimo de gasolina en la estación de servicio.
-    5. Variables Propias de los Camiones:
-        ◦ truck-agents-own: Define las variables propias de los camiones.
-            ▪ transportation-tank: Capacidad del tanque de transporte del camión.
-            ▪ at-distribution-center?: ¿El camión está en un centro de distribución?
-            ▪ at-service-station?: ¿El camión está en una estación de servicio?
-    6. Procedimiento setup:
-        ◦ clear-all: Limpia todo el entorno de simulación.
-        ◦ create-distribution-center: Crea centros de distribución.
-        ◦ create-service-station: Crea estaciones de servicio.
-        ◦ create-trucks: Crea camiones.
-        ◦ Inicializa las variables globales.
-    7. Procedimientos para Crear Centros de Distribución y Estaciones de Servicio:
-        ◦ create-distribution-center: Crea 4 centros de distribución con propiedades iniciales.
-        ◦ create-service-station: Crea 578 estaciones de servicio con propiedades iniciales.
-    8. Procedimiento create-trucks:
-        ◦ Crea 100 camiones con propiedades iniciales.
-    9. Procedimiento move-trucks:
-        ◦ Mueve los camiones entre centros de distribución y estaciones de servicio según ciertas condiciones.
-    10. Procedimientos update-time y update-availability:
-        ◦ Actualizan el tiempo simulado y la disponibilidad de gas en los centros de distribución.
-    11. Procedimiento update-service-station-gas:
-        ◦ Actualiza el nivel de gasolina en las estaciones de servicio, gestionando las entregas de gasolina desde los camiones.
-    12. Procedimiento go:
-        ◦ Inicia la simulación y repite las acciones hasta que se alcance un límite de tiempo
+1. Definición de los breed: En esta sección del código, se definen tres tipos de agentes: camiones (`truck-agents`), estaciones de servicio (`stations`), y centros de distribución (`distribution-centers`). Estos breed representan los elementos clave en el modelo de simulación.
+
+    • breed [truck-agents truck]
+    • breed [stations station]
+    • breed [distribution-centers distribution-center]
+
+2. Variables Globales: En esta parte, se definen las variables globales que se utilizarán en todo el modelo para rastrear información importante. Estas variables incluyen `time-factor` (factor de escala de tiempo), `current-time` (tiempo simulado en semanas), `current-month` (para hacer un seguimiento del mes actual), `monthly-gas-delivered` (para rastrear el total mensual de gasolina entregada), y `monthly-gas-consumption` (para rastrear el consumo mensual de gasolina).
+
+globals [
+  time-factor ; Factor de escala de tiempo (horas por tick)
+  current-time ; Tiempo simulado en semanas
+  current-month ; Para rastrear el mes actual
+  monthly-gas-delivered ; Para rastrear el total mensual de gasolina entregada
+  monthly-gas-consumption ; Para rastrear el consumo mensual de gasolina
+]
+
+3. Variables Propias de los Centros de Distribución: Aquí se definen las variables específicas de los centros de distribución (`distribution-centers-own`). Esto incluye `initial-distribution-center-gas`, que representa la cantidad inicial de gasolina en el centro de distribución, y `distribution-center-gas`, que rastrea el nivel actual de gasolina en el centro.
+
+distribution-centers-own [
+  initial-distribution-center-gas ; Gasolina inicial en el centro de distribución (cantidad fija)
+  distribution-center-gas ; Gasolina en el centro de distribución
+]
+
+4. Variables Propias de las Estaciones de Servicio: Esta parte define las variables propias de las estaciones de servicio (`stations-own`). Esto incluye `fuel-capacity` (capacidad de combustible), `gas-consumption-rate` (tasa de consumo de gasolina en la estación de servicio), `service-station-gas` (cantidad de gasolina en la estación), `service-station-gas-threshold` (umbral mínimo de gasolina para la estación), y `is-la-maxima?` (una variable para identificar si es "La Maxima" o no).
+
+La maxima es una estación ”control” usada para validar datos, no se muestra en las impresiones finales.
+
+stations-own [
+  fuel-capacity ; Capacidad de combustible
+  gas-consumption-rate ; Tasa de consumo de gasolina en la estación de servicio
+  service-station-gas ; Cantidad de gasolina en la estación
+  service-station-gas-threshold ; Nivel mínimo de gasolina para la estación
+  is-la-maxima? ; Variable para identificar "La Maxima" estación de servicio
+]
+
+5. Variables Propias de los Camiones: Esta parte define las variables propias de los camiones (`truck-agents-own`). Esto incluye `transportation-tank` (tanque de transporte), `at-distribution-center?` (para saber si el camión está en el centro de distribución), y `at-service-station?` (para saber si el camión está en la estación de servicio).
+
+truck-agents-own [
+  transportation-tank ; Tanque de transporte de gasolina
+  at-distribution-center? ; ¿Está en el centro de distribución?
+  at-service-station? ; ¿Está en la estación de servicio?
+]
+
+6. Procedimiento de Configuración (setup): El procedimiento `setup` se utiliza para preparar el entorno inicial del modelo. Esto incluye la creación de centros de distribución, estaciones de servicio y camiones. También se inicializan varias variables globales y se reinician los ticks.
+
+to setup
+  clear-all
+  create-distribution-center
+  create-service-station
+  create-trucks
+  set time-factor 6 ; 6 horas en un "día"
+  set current-time 0 ; Inicializar el tiempo actual
+  set current-month 0 ; Inicializar el mes actual
+  set monthly-gas-delivered 0 ; Inicializar el total mensual de gasolina entregada
+  set monthly-gas-consumption 383470 ; Inicializar el consumo mensual de gasolina
+  reset-ticks
+end
